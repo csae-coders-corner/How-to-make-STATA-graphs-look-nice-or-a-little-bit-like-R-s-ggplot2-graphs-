@@ -6,9 +6,12 @@ Stata’s default graphs are not the best, but before you jump ahead and switch 
 sysuse auto
 
 scatter mpg headroom turn weight
+
+
 ![graphs1](https://github.com/csae-coders-corner/How-to-make-STATA-graphs-look-nice-or-a-little-bit-like-R-s-ggplot2-graphs-/assets/148211163/21684b47-3689-4da5-a723-4c73f4723a28)
 
-2. 2)	A defaut Stata graphics coefplot might look like Figure 2.
+
+. A defaut Stata graphics coefplot might look like Figure 2.
 
 ssc install coefplot, replace				// install coefplot
 
@@ -25,6 +28,7 @@ estimates store F
 coefplot D F, drop(_cons) xline(0)
 
 ![graphs2](https://github.com/csae-coders-corner/How-to-make-STATA-graphs-look-nice-or-a-little-bit-like-R-s-ggplot2-graphs-/assets/148211163/12bbec1d-b71d-448c-b354-fb56a9c1719a)
+
 
 ## Step-by-step guide to nice grstyle graphs:
 
@@ -93,10 +97,14 @@ and so on…
 
 ![graphs4](https://github.com/csae-coders-corner/How-to-make-STATA-graphs-look-nice-or-a-little-bit-like-R-s-ggplot2-graphs-/assets/148211163/3ab486f5-9cc5-4dc4-a141-87181363b5bd)
 
+
 6. Let’s run the same graphs again:
+   
 ![graphs5](https://github.com/csae-coders-corner/How-to-make-STATA-graphs-look-nice-or-a-little-bit-like-R-s-ggplot2-graphs-/assets/148211163/72ae4d0f-bd66-4e80-9bac-560cee9af9fb)
 
-7. Finally, to reset your global graphic settings to Stata default settings run :
+
+9. Finally, to reset your global graphic settings to Stata default settings run :
+    
 grstyle clear		 // sets off grstyle
 
 ![graphs6](https://github.com/csae-coders-corner/How-to-make-STATA-graphs-look-nice-or-a-little-bit-like-R-s-ggplot2-graphs-/assets/148211163/6d6f4738-52ba-4b22-9a73-2718f6c7ee1c)
@@ -104,3 +112,6 @@ grstyle clear		 // sets off grstyle
 
 For further help and syntax overview, see: http://repec.sowi.unibe.ch/stata/grstyle/help-grstyle-set.html
 
+
+**Raphael Bradenbrink, Research Assistant, Refugee Studies Centre, Oxford**
+**17 June 2019**
